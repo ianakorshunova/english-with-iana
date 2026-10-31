@@ -641,3 +641,40 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+
+.site-nav {
+  display: flex;
+  justify-content: center;
+  padding: 20px 24px;
+  background: #fbf9f6;
+}
+
+.site-nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.site-nav-links a {
+  color: #5f5c58;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site-nav-links a:hover {
+  color: var(--accent-dark);
+}
+
+@media (max-width: 760px) {
+  .site-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-nav-links {
+    flex-wrap: wrap;
+    gap: 10px 16px;
+  }
+}
